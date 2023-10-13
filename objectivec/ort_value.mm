@@ -202,6 +202,11 @@ bool SafeMultiply(size_t a, size_t b, size_t& out) {
   ORT_OBJC_API_IMPL_CATCH_RETURNING_NULLABLE(error)
 }
 
+- (void) releaseValue {
+    Ort::detail::OrtRelease(self.CXXAPIOrtValue);
+}
+
+
 #pragma mark - Internal
 
 - (nullable instancetype)initWithCXXAPIOrtValue:(Ort::Value&&)existingCXXAPIOrtValue
