@@ -202,7 +202,7 @@ bool SafeMultiply(size_t a, size_t b, size_t& out) {
   ORT_OBJC_API_IMPL_CATCH_RETURNING_NULLABLE(error)
 }
 
-- (void) releaseValue {
+- (void) freeValue {
     Ort::detail::OrtRelease(self.CXXAPIOrtValue);
 }
 
