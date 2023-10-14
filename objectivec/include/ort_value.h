@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSArray<NSString*>*)tensorStringDataWithError:(NSError**)error;
 
-- (void)releaseValue;
+- (void)freeValue;
 
 @end
 
