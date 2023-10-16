@@ -174,7 +174,7 @@ bool SafeMultiply(size_t a, size_t b, size_t& out) {
 
     return [NSMutableData dataWithBytesNoCopy:rawData
                                        length:rawDataLength
-                                 freeWhenDone:YES];
+                                 freeWhenDone:NO];
   }
   ORT_OBJC_API_IMPL_CATCH_RETURNING_NULLABLE(error)
 }
